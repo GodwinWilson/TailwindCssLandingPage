@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+
+.bgColor{
+    background: rgb(17 94 89);
+    box-shadow: 1px 1px 2px #000;
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+    color:#000 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+.right-menu:hover .dropdown-menu{
+    display: flex !important;;
+}
+.one.active{
+    display: none;
+}
+.two.active{
+    display: block;
+}
+.three.active{
+    display: flex;
+}
+
+.buss.active{
+    display: none;
+}
+#buss.active{
+    color: rgb(148 163 184);
+}
+#buss.active:hover{
+    color: rgb(5 150 105);
+}
+
+.exp.active{
+    display: flex;
+}
+#exp.active{
+    color: rgb(5 150 105) !important;
+}
+
+.qua.active{
+    display: block;
+}
+#qua.active {
+    color: rgb(5 150 105);
+}

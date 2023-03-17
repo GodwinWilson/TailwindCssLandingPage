@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="/Images/logo.png" type="image/x-icon">
+    <script src="/js/script.js" defer></script>
+
+</head>
+<body>
+    <header class="fixed top-0 right-0 left-0 z-40" id="nav">
+        <nav class="container mx-auto p-1">
+            <div class="flex items-center justify-between">
+                <div>
+                    <img src="/Images/logo.png" alt="" class="w-[20%]" loading="lazy">
+                </div>
+                <div class="hidden md:flex space-x-6 text-white justify-center items-center">
+                    <a href="#" class="text-green-600">Home</a>
+                    <a href="#" class="hover:text-green-600">Services</a>
+                    <div class="right-menu">
+                        <div class="flex hover:text-green-600 space-x-1 items-center">
+                            <a href="#" class="hover:text-green-600 menu-button relative inline-block">Drop</a> <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                        
+                        <div class="dropdown-menu flex-col items-center justify-center absolute space-y-4 bg-teal-800 z-10 p-2 hidden min-w-[120px] rounded-b-lg">
+                            <a href="#" class="py-1 border-b border-cyan-400 w-full text-center hover:text-green-600">Article Details</a>
+                            <a href="#" class="py-1 border-b border-cyan-400 text-center w-full hover:text-green-600">Terms Conditions</a>
+                            <a href="#" class="py-1 text-center w-full hover:text-green-600">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="hover:text-green-600">About</a>
+                    <a href="#" class="hover:text-green-600">Contact</a>
+                    
+                    
+                    <div class="flex items-center justify-center space-x-2">
+                        <a href="#" class="bg-teal-600 p-2 rounded-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="bg-teal-600 p-2 rounded-lg"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+    
+            <div class="md:hidden duration-300">
+                <div id="menu" class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-teal-700 sm:w-auto sm:self-center sm:top-11 top-3 left-0 right-0 drop-shadow-md text-white">
+                    <a href="#" class="hover:text-green-600">Home</a>
+                    <a href="#" class="hover:text-green-600">Services</a>
+                    <div class="right-menu flex flex-col items-center justify-center">
+                        <div class="flex hover:text-green-600 space-x-1 items-center">
+                            <a href="#" class="hover:text-green-600 menu-button inline-block">Drop</a> <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                        
+                        <div class="dropdown-menu flex-col items-center justify-center space-y-4 bg-transparent hidden">
+                            <a href="#" class="py-1 border-b border-cyan-200 w-full text-center hover:text-green-600">Article Details</a>
+                            <a href="#" class="py-1 border-b border-cyan-200 text-center w-full hover:text-green-600">Terms Conditions</a>
+                            <a href="#" class="py-1 text-center w-full hover:text-green-600">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="hover:text-green-600">About</a>
+                    <a href="#" class="hover:text-green-600">Contact</a>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="text-center text-white bg-hero-pattern bg-no-repeat bg-top bg-cover min-w-full">
+        <!--<section class="flex flex-col items-center justify-center md:py-52 py-32 space-y-3">-->
+        <section class="container mx-auto flex flex-col items-center justify-center space-y-3 py-24">    
+            <h3 class="text-3xl mt-19 font-extrabold uppercase sm:text-4xl md:text-6xl lg:text-7xl">Lorem Ipsum Dolor</h3>
+            <p class="w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex blanditiis dicta facilis quid quos omnis maiores? Soluta nulla repellat fugiat perferendis dignissimos maiores veniam? Ratione, accusamus?</p>
+            <a href="#" class="bg-green-600 p-3 rounded text-neutral-50 hover:bg-transparent hover:border-green-600 hover:border hover:border-solid">Discover</a>
+        </section>
+    </main>
+    <section class="container mx-auto flex flex-col md:space-x-5 my-20 items-center justify-center md:flex-row">
+        <div class="space-y-4 md:w-1/2 w-full">
+            <h2 class="font-bold uppercase text-sm text-teal-600">Intro</h2>
+            <h3 class="font-bold text-3xl">We Offer Some Of The Best Business Growth Services In Town</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit, distinctio perspiciatis cumque enim iure possimus quo voluptate beatae dolorum eligendi doloribus voluptatum expedita, harum consectetur accusamus!</p>
+            <p><em>"Lorem ipsum dolor sit amet consectetur adipiscing elit. Vivamus tempor quam nec lobortis sodaleso diam nibh elementum nunce vel pharetra cicero"</em></p>
+            <p class="font-bold text-lg">Godwin Edet Wilson - CEO</p>
+        </div>
+        <div class="md:w-1/2">
+            <img src="Images/intro-office.jpg" alt="" loading="lazy">
+        </div>
+    </section>
+    <section class="container mx-auto flex flex-col md:flex-row md:space-y-0 space-y-5">
+        <div class="md:w-1/3 space-y-3">
+            <i class="fa fa-binoculars bg-green-500 p-4 text-white "></i>
+            <p class="font-bold text-xl">Environment Analysis</p>
+            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Vivamus tempor, qua nec lobortis sodales, diam nibh reni</p>
+        </div>
+        <div class="md:w-1/3 space-y-3">
+            <i class="fa fa-list bg-green-500 p-4 text-white"></i>
+            <p class="font-bold text-xl">Development Planning</p>
+            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Vivamus tempor, qua nec lobortis sodales, diam nibh reni</p>
+        </div>
+        <div class="md:w-1/3 space-y-3">
+            <i class="fa fa-pie-chart bg-green-500 p-4 text-white"></i>
+            <p class="font-bold text-xl">Execution & Evaluation</p>
+            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Vivamus tempor, qua nec lobortis sodales, diam nibh reni</p>
+        </div>
+    </section>
+    <section class="mt-32 space-y-4">
+        <h2 class="text-center font-bold uppercase text-xl text-teal-700">Services</h2>
+        <div class="text-center flex items-center justify-center">
+            <p class="md:w-[40%] font-bold text-3xl ">Choose The Service Package That Suits Your Needs</p>
+        </div>
+        
+        <div class="container mx-auto flex flex-col md:flex-row md:space-x-7 space-y-6 md:space-y-0">
+            <div class="md:w-1/3 flex flex-col space-y-5 ">
+                <img src="/Images/service-1.jpg" alt="" class="rounded" loading="lazy">
+                <h4 class="font-bold text-2xl text-center">Off The Ground</h4>
+                <p>Lorem ipsum dolor sit amet verlo consec adipiscing elit. Vivamus tem qua nec lobortis sodales mici</p>
+                <ul>
+                    <li class="list-square">Lorem ipsum dolor sit amet verlo</li>
+                    <li class="list-square">Nec lobortis sodales rivalo mici</li>
+                </ul>
+                <p class="text-center font-bold">Starting at <span class="text-green-600">&#8358;5000</span></p>
+                <a href="#" class="bg-green-600 p-3 rounded text-neutral-50 hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 text-center mx-auto">Sign Up</a>
+            </div>
+            <div class="md:w-1/3 flex flex-col space-y-5">
+                <img src="/Images/service-2.jpg" alt="" class="rounded" loading="lazy">
+                <h4 class="font-bold text-2xl text-center">Accelerated Growth</h4>
+                <p>Lorem ipsum dolor sit amet verlo consec adipiscing elit. Vivamus tem qua nec lobortis sodales mici</p>
+                <ul>
+                    <li class="list-square">Lorem ipsum dolor sit amet verlo</li>
+                    <li class="list-square">Nec lobortis sodales rivalo mici</li>
+                </ul>
+                <p class="text-center font-bold">Starting at <span class="text-green-600">&#8358;5000</span></p>
+                <a href="#" class="bg-green-600 p-3 rounded text-neutral-50 hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 text-center mx-auto">Sign Up</a>
+            </div>
+            <div class="md:w-1/3 flex flex-col space-y-5 ">
+                <img src="/Images/service-3.jpg" alt="" class="rounded" loading="lazy">
+                <h4 class="font-bold text-2xl text-center">Market Domination</h4>
+                <p>Lorem ipsum dolor sit amet verlo consec adipiscing elit. Vivamus tem qua nec lobortis sodales mici</p>
+                <ul>
+                    <li class="list-square list">Lorem ipsum dolor sit amet verlo</li>
+                    <li class="list-square">Nec lobortis sodales rivalo mici</li>
+                </ul>
+                <p class="text-center font-bold">Starting at <span class="text-green-600">&#8358;5000</span></p>
+                <a href="#" class="bg-green-600 p-3 rounded text-neutral-50 hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 text-center mx-auto">Sign Up</a>
+            </div>
+        </div>
+
+        <!--Sevices large 1-->
+        <div class="">
+            <div class="flex flex-col mt-10 lg:flex-row">
+                <div class="lg:w-1/2 lg:h-[70vh]">
+                    <img src="/Images/details-1-background.jpg" alt="" class="h-full" loading="lazy">
+                </div>
+                
+                <div class="lg:w-1/2 container mx-auto lg:space-y-3">
+                    <div class="flex justify-center">
+                        <h3 class="text-center font-bold lg:text-3xl text-2xl md:w-[66%] ">Accelerate Business Start By Improving Revenue</h3>
+                    </div>
+                    
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <p class="bg-emerald-400 p-2 cursor-pointer text-white font-extrabold">1</p>
+                            <h5 class="text-base font-bold"><a href="#/" id="one">How Can Godwin Help Your Business</a></h5>
+                        </div>
+        
+                        <div class="flex one">
+                            <p class="px-10 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, quam nec lobortis sodales, diam nibh elementum nunc, vel pharetra metus ra</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <p class="bg-emerald-400 p-2 cursor-pointer text-white font-extrabold">2</p>
+                            <h5 class="text-base font-bold"><a href="#/" id="two">What Happens When Godwin Helps You</a></h5>
+                        </div>
+        
+                        <div class="hidden two">
+                            <p class="px-10 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, quam nec lobortis sodales, diam nibh elementum nunc, vel pharetra metus ra</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex items-center space-x-2">
+                            <p class="bg-emerald-400 p-2 cursor-pointer text-white font-extrabold">3</p>
+                            <h5 class="text-base font-bold "><a href="#/" id="three">Godwin is Pleased to Help You</a></h5>
+                        </div>
+        
+                        <div class="hidden three">
+                            <p class="px-10 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, quam nec lobortis sodales, diam nibh elementum nunc, vel pharetra metus ra</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <!--Services large 2-->
+            
+            <div class="flex flex-col lg:flex-row mt-20 lg:mt-0">
+                <div class="lg:w-1/2 m-auto lg:p-18">                
+                    <div class="space-y-6">
+                        <ul class="flex space-x-5 items-center justify-center">
+                            <li>
+                                <a href="#/" class="font-bold text-xl text-emerald-600" id="buss"><i class="fa fa-th"></i> Business</a>
+                            </li>
+                            <li>
+                                <a href="#/" class="font-bold text-xl text-slate-400 hover:text-emerald-600" id="exp"><i class="fa fa-th"></i> Expertise</a>
+                            </li>
+                            <li>
+                                <a href="#/" class="font-bold text-xl text-slate-400 hover:text-emerald-600" id="qua"><i class="fa fa-th "></i> Quality</a>
+                            </li>
+                        </ul>
+                        <div class="lg:w-1/2 container mx-auto space-y-3 buss">
+                            <h4 class="text-xl font-bold">Business Services for Companies</h4>
+                            <p class=" m-auto text-slate-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate debitis asperiores aliquam quisquam, dolorum ipsa eaque itaque possimus ducimus placeat, corporis blanditiis! Corrupti ad totam optio</p>
+                            <div class="flex flex-col space-y-5">
+                                <div class="">
+                                    <h4 class="font-bold text-sm text-slate-700">Business Development 100%</h4>
+                                    <div class="bg-slate-200  vs:w-72 w-auto">
+                                        <div class="bg-green-500 w-full p-2"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4 class="font-bold text-sm text-slate-700">Opportunity Spotting 76%</h4>
+                                    <div class="bg-slate-200  vs:w-72 w-auto">
+                                        <div class="bg-green-500 w-[76%] p-2"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4 class="font-bold text-sm text-slate-700">Online Marketing 90%</h4>
+                                    <div class="bg-slate-200  vs:w-72 w-auto">
+                                        <div class="bg-green-500 w-[90%] p-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="container mx-auto hidden md:flex-row flex-col exp">
+                            <ul class="md:w-1/2 w-full space-y-3">
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">1</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">2</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">3</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="md:w-1/2 w-full space-y-3">
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">4</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">5</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                                <li class="flex space-x-2">
+                                    <span class="text-green-500 font-bold flex text-xl">6</span>
+                                    <div>
+                                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ab ut doloribus consectetur voluptas fugit!
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+        
+        
+                        <div class="container m-auto flex-col md:w-3/4 w-full hidden qua">
+                            <p>
+                                <strong>Loremo Indesa</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corporis reprehenderit sint minima in aspernatur sit consectetur repellat ea praesentium. <a href="" class="decoration-green-600 underline text-green-600">godwin wilson</a>
+                            </p>
+                            <p>
+                                <strong>Loremo Indesa</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corporis reprehenderit sint minima in aspernatur sit consectetur repellat ea praesentium. <a href="" class="decoration-green-600 underline text-green-600">godwin wilson</a>
+                            </p>
+                            <ul>
+                                <li class="list-square">Mauris facilisis urna urna, non volutpat tortor rhoncus nec</li>
+                                <li class="list-square">Mauris facilisis urna urna, non rhoncus nec</li>
+                                <li class="list-square">Mauris facilisis urna urna, non volutpat to</li>
+                                <li class="list-square">Mauris facilisis urna urna, non volutpat tortor rhoncus</li>
+                            </ul>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+                <div class="lg:w-1/2 lg:h-[80vh]">
+                    <img src="/Images/details-2-background.jpg" alt="" class="h-full" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <!--Testimonials-->
+        <div class="container mx-auto mt-28">
+            <h3 class="text-center capitalize text-3xl font-bold text-slate-600">Read our customer testimonials</h3>
+
+            <!-- Slider main container -->
+            <div class="swiper md:h-72 h-96">
+                <!-- Additional required wrapper -->
+                <ul class="swiper-wrapper">
+                    <!-- Slides -->
+                    <li class="swiper-slide flex flex-col items-center justify-center w-full space-y-4">
+                        <img src="/Images/testimonial-1.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">Jane Doe - Developer</p>
+                    </li>
+                    <li class="swiper-slide flex flex-col items-center justify-center w-full space-y-4">
+                        <img src="/Images/testimonial-2.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">John Doe - Designer</p>
+                    </li>
+                    <li class="swiper-slide flex flex-col items-center justify-center lg:w-1/3 md:w-1/2 w-full space-y-4">
+                        <img src="/Images/testimonial-3.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">Janet Doe - Designer</p>
+                    </li>
+                    <li class="swiper-slide flex flex-col items-center justify-center w-full space-y-4">
+                        <img src="/Images/testimonial-4.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">Jackson Doe - Marketer</p>
+                    </li>
+                    <li class="swiper-slide flex flex-col items-center justify-center w-full space-y-4">
+                        <img src="/Images/testimonial-5.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">Julie Doe - Developer</p>
+                    </li>
+                    <li class="swiper-slide flex flex-col items-center justify-center w-full space-y-4">
+                        <img src="/Images/testimonial-6.jpg" alt="" class="rounded-full w-28" loading="lazy">
+                        <p class="w-2/3 text-slate-600 italic">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+                        <p class="text-center font-bold text-xl text-slate-800">June Doe - Marketer</p>
+                    </li>
+                </ul>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination" id="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+        </div>
+
+        <div class="bg-teal-800">
+            <div class="container mx-auto flex flex-col md:space-x-10 md:flex-row py-9">
+                <div class="text-white md:w-1/2 m-auto space-y-4">
+                    <h4 class="uppercase font-bold text-sm text-green-700">Call Me</h4>
+                    <h5 class="font-bold text-3xl">Have Us Contact You By Submitting The Form</h5>
+                    <p>Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non ipsum vida que nori.</p>
+                    <ul>
+                        <p class="">
+                            <i class="fa-solid fa-square text-teal-600 text-xs"></i> 
+                            Non volutpat tortor rhoncus nec. Vivamus consectetur dui quis
+                        </p>
+                        <p class="">
+                            <i class="fa-solid fa-square text-teal-600 text-xs"></i> 
+                            Sed velit velits malesuada at fermentum inore mas fermentum
+                        </p>
+                        <p class="">
+                            <i class="fa-solid fa-square text-teal-600 text-xs"></i> 
+                            Malesuada risus morbi et lacinia felis deraesent sed conolo
+                        </p>
+                    </ul>
+                </div>
+                <div class="m-auto p-3 md:w-1/2 w-full">
+                    <form action="" class="flex flex-col space-y-7 py-5">
+                        <input type="text" id="" placeholder="Name" class="bg-teal-600 p-4 rounded placeholder:text-white">
+                        <input type="email" id="" placeholder="Email" class="bg-teal-600 p-4 rounded placeholder:text-white">
+                        <input type="tel" name="" id="" placeholder="Phone Number" class="bg-teal-600 p-4 rounded placeholder:text-white">
+                        <select name="" id="" class="bg-teal-600 p-4 rounded text-white">
+                            <option value="" selected>Interested in...</option>
+                            <option value="1">Web Development</option>
+                            <option value="2">App Development</option>
+                            <option value="3">Game Develpoment</option>
+                            <option value="4">Sport Site</option>
+                        </select>
+                        <div class="flex space-x-2">
+                            <input type="checkbox" name="" id="" class="">
+                            <p class="text-white">I agree with the <a href="#" class="underline">Privacy Policy</a> and <a href="#" class="underline">Terms & Conditions</a></p>
+                        </div>
+                        <a href="#" class="bg-emerald-600 p-3 rounded text-neutral-50 text-center hover:bg-emerald-400">Sign Up</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto flex flex-col md:flex-row md:space-x-10 mt-7">
+        <div class="w-1/2">
+            <img src="/Images/about.jpg" alt="" class="rounded" loading="lazy">
+        </div>
+        <div class="md:w-1/2 w-full space-y-5">
+            <h3 class="uppercase text-emerald-600 font-bold">About</h3>
+            <h4 class="font-bold text-3xl text-gray-700">We Deliver Growth</h4>
+            <p class="text-gray-500">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non ipsum</p>
+            <div class="text-justify">
+                <p class="text-gray-500"><i class="fa-solid fa-square text-teal-600 text-xs"></i> Mauris facilisis urna urna, non volutpat tortor rhoncus necros</p>
+                <p class="text-gray-500"><i class="fa-solid fa-square text-teal-600 text-xs"></i> Duis eget ante elementum gravida justo id venenatis odio la</p>
+            </div>
+                
+            
+            <div class="flex space-x-5 flex-wrap">
+                <div class="flex justify-center items-center space-x-2">
+                    <span class=" font-black text-3xl lg:text-5xl text-emerald-700">265</span>
+                    <span class="text-sm text-gray-600">Happy<br> Users</span>
+                </div>
+                <div class="flex justify-center items-center space-x-2">
+                    <span class="font-black text-3xl lg:text-5xl text-emerald-700">390</span>
+                    <span class="text-sm text-gray-600">Issues <br>Solved</span>
+                </div>
+                <div class="flex justify-center items-center space-x-2">
+                    <span class="font-black text-3xl lg:text-5xl text-emerald-700">240</span>
+                    <span class="text-sm text-gray-600">Good <br> Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto my-16 flex flex-col md:flex-row md:space-x-5">
+        <div class="md:w-1/2 m-auto space-y-4">
+            <h3 class="uppercase font-bold text-green-700">Contact</h3>
+            <h4 class="font-bold text-3xl text-slate-700">Get In Touch Through The Form Or Use The Info Below</h4>
+            <p class="text-gray-500">Mauris facilisis urna urna, non volutpat tortor rhoncus nec. Vivamus consectetur dui quis libero tempus, ut eleifend ex consectetur. Nulla vel ultrices lacus. Proin quis elit non</p>
+            <p class="text-gray-500"><i class="fa-solid fa-location-dot text-emerald-600"></i> 1 Godwin Boulevard, Udung Uko, Akwa Ibom</p>
+            <div class="space-x-1 text-gray-500">
+                <span class="space-x-1">
+                    <i class="fa-sharp fa-solid fa-phone-flip text-emerald-600"></i>
+                    <a href="" class="underline text-sm"> +234-123-4567-890</a>
+                </span>
+                <span class="space-x-1">
+                    <i class="fa-sharp fa-solid fa-phone-flip text-emerald-600"></i>
+                    <a href="" class="underline text-sm"> +234-012-3456-789</a>
+                </span>
+                <span class="space-x-1"><i class="fa fa-envelope text-emerald-600" aria-hidden="true"></i><a href="" class="underline text-sm">godwin@email.com</a></span>
+            </div>
+        </div>
+        <div class="md:w-1/2 w-full">
+            <form action="" class="flex flex-col space-y-4">
+                <input type="text" placeholder="Name" class="p-3 rounded border border-gray-800 border-solid">
+                <input type="email" placeholder="Email" class="p-3 rounded border border-gray-800 border-solid">
+                <input type="text" placeholder="Message" class="p-6 rounded border-gray-800 border-solid border">
+                
+                <div class="flex space-x-2">
+                    <input type="checkbox" name="" id="" class="">
+                    <p class="text-gray-500">I agree with the <a href="#" class="underline">Privacy Policy</a> and <a href="#" class="underline">Terms & Conditions</a></p>
+                </div>
+                <a href="#" class="bg-emerald-600 p-3 rounded text-neutral-50 text-center hover:bg-emerald-400">Submit</a>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-teal-800">
+        <div class="container mx-auto flex flex-col py-10 text-white space-y-9">
+            <div class="flex md:space-x-7 md:flex-row flex-col space-y-4 md:space-y-0">
+                <div class="md:w-1/3 space-y-3">
+                    <h3 class="font-bold">About Website</h3>
+                    <p>Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor dolor</p>
+                </div>
+                <div class="md:w-1/3 space-y-3">
+                    <h3 class="font-bold">Links</h3>
+                    <p>Important: <a href="#">Terms & Condtions</a>, <a href="#">Privacy Policy</a></p>
+                    <p>Useful: <a href="#">Colour Picker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></p>
+                    <p>Menu: <a href="#">Home</a>, <a href="#">Services</a>, <a href="#">Intro</a>, <a href="#">Contact</a></p>
+                </div>
+                <div class="md:w-1/3 space-y-5">
+                    <div class="space-x-5">
+                        <a href="#" class="p-5 bg-teal-600 hover:bg-white hover:text-teal-600"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="p-5 bg-teal-600 hover:bg-white hover:text-teal-600"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="p-5 bg-teal-600 hover:bg-white hover:text-teal-600"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="p-5 bg-teal-600 hover:bg-white hover:text-teal-600"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <p class="lg:text-right">Aliquam ultrices turpis rave loro</p>
+                    <p class="lg:text-right"><a href="#" class="font-bold">godwin@email.com</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center">
+                Copyright &copy; Godwin Wilson, 2023
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
