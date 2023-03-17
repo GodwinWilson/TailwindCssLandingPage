@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/Images/header-background.jpg')"
+        'hero-pattern': "url('Images/header-background.jpg')"
       }
     },
     listStyleType: {
